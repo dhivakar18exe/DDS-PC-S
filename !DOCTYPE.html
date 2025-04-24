@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDS PC's</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #4ecdc4;
+    }
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2020/06/15/17/42/pc-5302711_1280.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 10px #000;
+    }
+    .hero h2 {
+      font-size: 36px;
+    }
+    .form-section {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .form-section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    input[type="file"] {
+      background: #222;
+      color: #ccc;
+    }
+    button {
+      padding: 12px;
+      background-color: #4ecdc4;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #3abcb3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DDS PC's</h1>
+    <p>Your one-stop shop for laptop service and sales</p>
+  </header>
+
+  <div class="hero">
+    <h2>Professional Laptop Repairs & Sales</h2>
+  </div>
+
+  <section class="form-section">
+    <h3>Book a Service</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="laptop">Laptop Name and Model</label>
+      <input type="text" id="laptop" name="laptop" required>
+
+      <label for="problem">Describe the Problem</label>
+      <textarea id="problem" name="problem" rows="4" required></textarea>
+
+      <label for="media">Add Photo/Video (optional)</label>
+      <input type="file" id="media" name="media" accept="image/*,video/*">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>
